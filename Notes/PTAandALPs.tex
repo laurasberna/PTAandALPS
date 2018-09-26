@@ -1,0 +1,141 @@
+\documentclass[preprintnumbers,nofootinbib,prd,superscriptaddress,groupedaddress,aps]{revtex4-1} %twocolumn,
+
+%\pdfoutput=1
+
+%\documentclass[nofootinbib,aps,showpacs,floats,letterpaper,floatfix,groupedaddress,twocolumn]{revtex4}
+%\documentclass[twocolumn,showpacs,preprintnumbers,amssymb]{revtex4}
+%\documentclass[preprint,showpacs,preprintnumbers,amsmath,amssymb,nofootinbib]{revtex4}
+%\documentclass[showpacs,preprintnumbers,amsmath,amssymb,nofootinbib]{revtex4}
+
+%\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx,amssymb,amsmath,amsthm,amsfonts,epsfig,epsf}
+\usepackage[outdir=./]{epstopdf}
+\usepackage[linktocpage]{hyperref}
+\usepackage[usenames]{color}
+\usepackage{epstopdf}
+
+\usepackage{aas_macros}
+\usepackage{bm}
+\usepackage{dcolumn}
+\usepackage[latin1]{inputenc}
+\usepackage{latexsym}
+\usepackage{rotating}
+% \usepackage{hyperref}
+\usepackage{color}
+\usepackage{longtable}
+\usepackage{enumerate}
+\usepackage{tensor}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+
+%\usepackage{mathtools}
+\usepackage{url}
+\setlength{\tabcolsep}{12pt}
+
+\def\nn{\nonumber}
+\def\pa{\partial}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\beq{\begin{eqnarray}}
+\def\eeq{\end{eqnarray}}
+%%%%%%
+\def\lp{{\ell+1}}
+\def\lm{{\ell-1}}
+\def\lpp{{\ell+2}}
+\def\lmm{{\ell-2}}
+%%%%%
+\def\k{\kappa}
+\def\d{\delta}
+\def\s{\sigma}
+\def\o{\omega}
+\def\ob{\bar{\omega}}
+\def\ph{\varphi}
+\def\th{\vartheta}
+\def\ii{{{\rm i}\,}}
+\def\zz{\left<0\right>}
+\def\cQ{{\cal Q}}
+\def\el{{e^{\lambda}}}
+\def\eml{{e^{-\lambda}}}
+\def\bg{{\bar\gamma}}
+
+\DeclareMathOperator\arctanh{tanh^{-1}}
+\newcommand{\ac}[1]{{\textcolor{blue}{\sf{[AC: #1]}} }}
+\newcommand{\ls}[1]{{\textcolor{red}{\sf{[LS: #1]}} }}
+
+\def\mf{\mathfrak}
+\newcommand{\PBH}{{\mbox{\tiny PBH}}}
+\newcommand{\DM}{{\mbox{\tiny DM}}}
+% \setcounter{tocdepth}{0}
+
+\begin{document}
+
+\title{Probing axion-like particles and dilatons with pulsar timing}
+
+%%%%
+%\author{Laura Sberna}\email{lsberna@perimeterinstitute.ca}
+%\affiliation{Perimeter Institute for Theoretical Physics, 31 Caroline Street North Waterloo, Ontario N2L 2Y5, Canada.}
+%
+%\author{Paolo Pani}\email{paolo.pani@roma1.infn.it}
+%\affiliation{Dipartimento di Fisica, ``Sapienza'' Universit\`a di Roma \& Sezione INFN Roma1, Piazzale Aldo Moro 5, 00185, Roma, Italy}
+% \affiliation{CENTRA, Departamento de F\'{\i}sica, Instituto Superior T\'ecnico -- IST, Universidade de Lisboa -- UL, Avenida Rovisco Pais 1, 1049 Lisboa, Portugal}
+%%%%
+%\maketitle
+
+\section{Effects in the magnetosphere}
+The equation for the EM modes in a plasma coupled to a dilaton field is
+\begin{widetext}
+	\begin{flushleft}
+\begin{align}\label{eq:modesgeneral}
+\frac{\left(n^2-1\right) \left(\omega_p^2 \left(n^2 \cos ^2(\theta )-1\right)-\left(n^2-1\right) \omega ^2 \gamma _c^3 (n \,v \cos (\theta )-1)^2\right)}{\omega ^2 \gamma _c^3 (n \, v \cos (\theta )-1)^2}%+\nonumber \\
+-g^2B^2\frac{ \left(n^2-1\right) \left( n^2 \cos (2 \theta )+n^2-2 \right)}{2 \left(m^2+\left(n^2-1\right) \omega ^2\right)}=0
+\end{align}
+\end{flushleft}
+\end{widetext}
+The interior of the magnetosphere, at $ r\ll r_A $ has
+\begin{equation}\label{key}
+A_p=\frac{\omega_p^2 \gamma_c}{\omega^2}\gg 1 \, ,
+\end{equation}
+while the exterior, at $ r\gg r_A $ has
+\begin{equation}\label{key}
+A_p \ll 1 \, .
+\end{equation}
+Among the modes, solutions of Eq.~\eqref{eq:modesgeneral}, one must chose the ones that propagate as transverse at larger angles. The trivial mode that is always transverse and always a solution is
+\begin{equation}\label{key}
+n_1=1 \, .
+\end{equation}
+Since we already know this solution, we can divide the Eq.~\eqref{eq:modesgeneral} by $ (n^2 -1) $ and look for the other ones. 
+We work in the small angles approximation $ \theta \ll 1 $. Moreover, the velocity of the plasma is close to $ c=1 $, $ \gamma_c\gg 1 $ and $ v \approx 1- \frac{1}{2 \gamma_c} $.
+ 
+\subsection{Magnetosphere interior}
+In the magnetosphere exterior, where $ A_p \gg 1 $ we can take $ v=1 $. We pick the mode that becomes transverse when $ \theta \gg \theta_*= (\frac{\omega_p^2 \gamma_c^-3}{\omega^2})^{1/4}$ \ls{there's a typo in the definition of this quantity in the draft},
+\begin{equation}\label{key}
+n_2=1+\frac{\theta ^2}{4}-\sqrt{\theta ^4+\theta _*^4} + F(g,\omega,\theta,\theta_*,m) .
+\end{equation}
+In the expression above, the function $ F $ is zero in the absence of the coupling $ g $, and was introduced to find the coupled solution perturbatively. At first order in $ F $ and $ g^2 $, we obtain \ls{different from the draft}
+\begin{widetext}
+	\begin{flushleft}
+\begin{equation}\label{key}
+F(g,\omega,\theta,\theta_*,m)=\frac{B^2 g^2 \left(G\left(\theta ,\theta _*\right)+\theta ^2\right){}^2 \left(\theta ^2 G\left(\theta ,\theta _*\right)+\theta ^4+8 \theta _*^4\right)}{2 \left(\left(G\left(\theta ,\theta _*\right)+\theta ^2\right){}^2+16 \theta _*^4\right) \left(\theta _*^4 \omega ^2 \left(G\left(\theta ,\theta _*\right)-\theta ^2-8\right)+m^2 \left(G\left(\theta ,\theta _*\right)+\theta ^2\right)\right)}
+\end{equation}
+\end{flushleft}
+\end{widetext}
+
+\subsection{Magnetosphere exterior}
+In the magnetosphere exterior, where $ A_p \ll 1 $ and $ |1-n|\ll \gamma^{-2} $, the transverse modes at zero coupling $ g=0 $ are $ n_1=1 $ and \ls{different from the draft}
+\begin{equation}\label{key}
+n_2=1-2 A_p \theta ^2 + O(\theta^4, A_p^2)\ .
+\end{equation}
+With the same approximations, we arrive, for $ g\neq 0 $, at
+\begin{equation}\label{key}
+n_2= 1+ \frac{B^2 g^2 }{2 \left(B^2 g^2+m^2\right)} \theta ^2 + + O(\theta^4, A_p)
+\end{equation}
+The new mode is bigger than the $ g=0 $ contribution, which was therefore discarded \ls{Are we so sure about this?}.
+
+% \bibliographystyle{apsrev4}
+\bibliographystyle{utphys}
+\bibliography{Ref}
+% 
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
